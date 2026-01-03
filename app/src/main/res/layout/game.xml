@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Score -->
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Chargement..."
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Game area -->
+
+    <com.otaliastudios.zoom.ZoomLayout
+        android:id="@+id/zoomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:alignment="none"
+        app:animationDuration="280"
+        app:flingEnabled="true"
+        app:hasClickableChildren="true"
+        app:horizontalPanEnabled="true"
+        app:maxZoom="5"
+        app:minZoom="0.2"
+        app:scrollEnabled="true"
+        app:zoomEnabled="true">
+
+        <GridLayout
+            android:id="@+id/mines_field"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="8"
+            android:rowCount="8" />
+
+    </com.otaliastudios.zoom.ZoomLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">The Deminor</string>
+    <string name="btn_start">Jouer</string>
+    <string name="btn_preferences">Préférences</string>
+    <string name="btn_credits">Crédits</string>
+    <string name="game_title">Ze Deminor</string>
+    <string name="lost">Vous avez trouvé un tournesol</string>
+    <string name="restart_game">Recommencer</string>
+    <string name="back_to_menu">Retour au menu</string>
+    <string name="won">Vous avez trouvé tous les tournesols !!!!</string>
+</resources>
